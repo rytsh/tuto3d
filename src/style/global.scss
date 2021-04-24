@@ -1,0 +1,97 @@
+@use './parts/app';
+@use './parts/show';
+@use './parts/md';
+@use './parts/info';
+@use './parts/count';
+
+html,
+body,
+canvas,
+#app {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background);
+  box-sizing: border-box;
+  color: #333;
+  color: var(--text);
+  font-family: var(--systemFont);
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #0064c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+}
+
+button,
+select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0 0 0.5em;
+  padding: 0.4em;
+}
+
+button {
+  background-color: var(--buttonColor);
+  color: var(--text);
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--buttonHover);
+  cursor: pointer;
+}
+
+::selection {
+  background-color: var(--selectionB);
+  color: var(--selectionC);
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ndisplay {
+  display: none !important;
+}
+
+.nvisible {
+  visibility: hidden;
+}
+
+.fit {
+  padding: 0 10px;
+}
+
+hr {
+  background: var(--text);
+  border: 0;
+  height: 1px;
+}
+
+.d {
+  display: block;
+}

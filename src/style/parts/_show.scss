@@ -1,0 +1,35 @@
+@use '../variables';
+
+.canvas {
+  display: block;
+  height: 100% !important;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+}
+
+.debug {
+  > div {
+    position: absolute !important;
+    z-index: 10;
+  }
+}
+
+.dg.main {
+  max-height: calc(100vh - 30px);
+  overflow-y: auto;
+  position: fixed !important;
+  right: 0;
+}
+
+.dg.main > .close-button.close-bottom {
+  position: unset !important;
+  width: 100% !important;
+}
+
+.debugm {
+  .dg.main {
+    position: absolute !important;
+  }
+}

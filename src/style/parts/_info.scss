@@ -1,0 +1,117 @@
+@use '../variables';
+
+$border-size: 2px;
+
+.info {
+  background-color: var(--pageBackground);
+  box-sizing: border-box;
+  left: 10%;
+  max-height: calc(100vh - #{variables.$top-height});
+  min-height: 100px;
+  min-width: 100px;
+  outline: var(--orange);
+  outline-style: dashed;
+  outline-width: 1px;
+  padding-right: variables.$info-line;
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  z-index: 50;
+
+  .frame {
+    height: 20px;
+  }
+
+  .top {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkYGD4z8DAwMgABXAGTAImAFeFrAKk6T8AguEEBM5dTCUAAAAASUVORK5CYII=') repeat;
+    cursor: move;
+    height: 100%;
+
+    &:hover {
+      background-color: var(--grey);
+    }
+  }
+
+  .title {
+    background-color: var(--text);
+    float: right;
+    height: variables.$info-title-height;
+    position: absolute;
+    right: variables.$info-line;
+    top: 0;
+    width: variables.$info-title-width;
+
+    button {
+      background-color: var(--text);
+      border: unset;
+      border-radius: unset;
+      fill: var(--layer);
+      float: right;
+      height: variables.$info-title-height;
+      line-height: variables.$info-title-height;
+      margin: unset;
+      padding: 0 5px;
+
+      &:hover {
+        fill: var(--yellow);
+      }
+    }
+
+    .close-button {
+      height: 100%;
+      width: 15px;
+    }
+  }
+
+  .triangle {
+    border-color: transparent var(--text) transparent transparent;
+    border-style: solid;
+    border-width: 0 variables.$info-title-height variables.$info-title-height 0;
+    height: 0;
+    margin-left: -#{variables.$info-title-height};
+    position: absolute;
+    width: 0;
+  }
+
+  .line-base {
+    background-color: var(--text);
+
+    &:hover {
+      background-color: var(--yellow);
+    }
+  }
+
+  .lined {
+    cursor: col-resize;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: variables.$info-line;
+  }
+
+  .liney {
+    bottom: 0;
+    cursor: row-resize;
+    height: variables.$info-line;
+    position: absolute;
+    width: 100%;
+  }
+
+  .linex {
+    bottom: 0;
+    cursor: nwse-resize;
+    height: variables.$info-line;
+    position: absolute;
+    right: 0;
+    width: variables.$info-line;
+  }
+
+  .content {
+    height: calc(100% - #{variables.$info-title-height} - #{variables.$info-line});
+    margin-bottom: #{variables.$info-line};
+    max-height: calc(80vh - #{variables.$info-line} - #{variables.$top-height} - #{variables.$info-title-height} - 2px);
+    overflow: auto;
+    padding: 0 10px;
+  }
+}

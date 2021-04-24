@@ -1,0 +1,46 @@
+$top-height: 30px;
+
+$info-line: 5px;
+$info-title-width: 40px;
+$info-title-height: 20px;
+
+$sidebar-width: 160px;
+
+// Color
+
+:root {
+  --mono: 'Source Code Pro', monospace;
+  --systemFont: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --transition: 0.2s;
+  --transitionFast: 0.1s;
+  --buttonHover: #ddd;
+  --buttonColor: #f4f4f4;
+  --selectionB: var(--red);
+  --selectionC: var(--white);
+  --bezierTransition: all 0.18s cubic-bezier(0.5, 0.1, 0.75, 1);
+  --borderRadius: 3px;
+  --borderRadiusMd: 8px;
+  --white: #fff;
+  --black: #060619;
+  --outline: hsla(0, 0%, 62.7%, 0.25);
+  --background: #f8fbfe;
+  --layer: #fff;
+  --pageBackground: #fff;
+  --popup: #1a1b31;
+  --text: #060619;
+  --textLight: rgba(22, 22, 22, 0.55);
+  --border: #16023c;
+  --inputBorder: #16023c;
+  --blue: #0868fe;
+  --purple: #631ccc;
+  --green: #4af9d6;
+  --yellow: #ffdb10;
+  --orange: #ff8f15;
+  --red: #fc143b;
+  --grey: #ebeef2;
+  --links: #0868fe;
+  --linksHover: #004dea;
+  --lightbox: rgba(210, 210, 232, 0.35);
+  --transparent: hsla(0, 0%, 100%, 0.75);
+  --shadow: 5px 5px 0;
+}

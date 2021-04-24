@@ -1,0 +1,8 @@
+.count {
+  counter-reset: parts;
+
+  a::before {
+    content: counter(parts, upper-roman) ' - ';
+    counter-increment: parts;
+  }
+}
