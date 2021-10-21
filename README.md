@@ -2,6 +2,10 @@
 
 This is bunch of examples of 3D implemetation on the web.
 
+I made it to remember and usages of 3d libraries.
+
+Any comment or feature ideas welcome.
+
 <details><summary>Development</summary>
 
 ## Run in development
