@@ -138,7 +138,7 @@ $progress-height: 10px;
   bottom: 0;
   padding-bottom: $progress-height;
   padding-right: 10px;
-  position: absolute;
+  position: fixed;
   right: 0;
 
   button {
@@ -164,6 +164,7 @@ $progress-height: 10px;
   height: $progress-height;
   position: absolute;
   width: 100%;
+  position: fixed;
 
   .width {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAACNJREFUCFtjZACCPyLW/1neHGUE0WACJAgCIEFGrCpgykGSAO2vFuNVT50qAAAAAElFTkSuQmCC') repeat;
